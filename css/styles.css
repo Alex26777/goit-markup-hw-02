@@ -1,5 +1,6 @@
 /* Підключення шрифтів з Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 /* Скидання стилів */
 * {
@@ -10,10 +11,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f8fd;
+    background-color: #FFFFFF; /* Білий колір фону */
     color: #434455;
     line-height: 1.6;
 }
+
 
 header,
 footer {
@@ -41,11 +43,74 @@ header address ul li {
     margin-right: 20px;
 }
 
+/* Застосування шрифту Raleway до логотипу та видалення курсивного стилю */
+header nav a[href="./index.html"],
+.footer-content a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px; /* Розмір шрифту для логотипу */
+    text-decoration: none;
+    color: #2E2F42;
+    font-style: normal; /* Видалення курсивного стилю */
+}
+
+/* Стилі для заголовку */
+.header-title {
+    position: absolute;
+    width: 496px;
+    height: 120px;
+    left: 472px;
+    top: 260px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px; /* або 107% */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF; /* WHITE */
+}
+
+/* Стилі для заголовку "Effective Solutions for Your Business" */
+.header-title {
+    width: 496px; 
+    height: 120px;
+    left: 50%; /* Центрування блоку по горизонталі */
+    top: 260px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF; /* Білий колір тексту */
+}
+
+/* Стилі для кнопки "Order Service" */
+.order-button {
+    width: 169px; 
+    height: 56px;
+    top: 428px;
+    background: #4D5AE5; /* Колір фону кнопки */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF; /* Білий колір тексту */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border: none;
+}
+
+
 header nav a,
 header address a {
     text-decoration: none;
     color: #2E2F42;
     font-size: 16px;
+    font-style: normal; /* Видалення курсивного стилю */
 }
 
 header address a:hover,
@@ -119,13 +184,96 @@ footer {
     padding: 20px 0;
 }
 
-.footer-content a {
-    text-decoration: none;
-    color: #2E2F42;
-    font-weight: 700;
-}
-
 .footer-content p {
     color: #767676;
     font-size: 14px;
+}
+
+/* Стилі для футера */
+footer {
+    position: absolute;
+    width: 100%; 
+    height: 312px;
+    left: 0px;
+    top: 2280px; 
+    background: #2E2F42;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 156px;
+}
+
+/* Стилі для тексту в футері */
+footer p {
+    position: absolute;
+    width: 264px;
+    height: 72px;
+    top: 2420px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD; 
+}
+
+/* Стилі для логотипу в футері */
+footer a[href="./index.html"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+footer a[href="./index.html"] span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F4F4FD;
+}
+
+/* Стилі для слогана поряд з логотипом */
+footer .slogan {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F4F4FD; 
+}
+
+/* Стилі для всіх кнопок фільтра */
+.filter-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    border-radius: 4px; 
+    border: 1px solid #E7E9FC;
+    background: #F4F4FD;
+    color: #2E2F42; 
+    margin: 5px 0; 
+    display: block; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Стилі для активної кнопки "All" */
+.filter-btn.all {
+    background: #404BBF;
+    color: #FFFFFF; 
+    margin: 5px 0; 
+}
+
+/* Стилі для стану наведення миші */
+.filter-btn:hover {
+    background: #4D5AE5; 
+    color: #FFFFFF;
 }
