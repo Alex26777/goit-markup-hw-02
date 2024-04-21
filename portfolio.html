@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Додавання шрифту Raleway для логотипу -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="./index.html" aria-label="WebStudio Home">WebStudio</a>
+            <a href="./index.html" class="logo" aria-label="WebStudio Home">WebStudio</a>
                     <ul>
                         <li><a href="./portfolio.html">Studio</a></li>
                         <li><a href="./portfolio.html">Portfolio</a></li>
@@ -26,102 +29,100 @@
     </header>
 
     <main>
-        <section class="filter">
-            <ul>
-                <li><button type="button" class="filter-btn active">All</button></li>
-                <li><button type="button" class="filter-btn">Web Site</button></li>
-                <li><button type="button" class="filter-btn">App</button></li>
-                <li><button type="button" class="filter-btn">Design</button></li>
-                <li><button type="button" class="filter-btn">Marketing</button></li>
-            </ul>
-        </section>        
-
         <section class="portfolio">
+            <h1>Portfolio</h1>
+            <ul class="filter-btns">
+                <li><button class="filter-btn All">All</button></li>
+                <li><button class="filter-btn web-site">Web Site</button></li>
+                <li><button class="filter-btn app">App</button></li>
+                <li><button class="filter-btn design">Design</button></li>
+                <li><button class="filter-btn marketing">Marketing</button></li>
+            </ul>            
+            
             <ul>
                 <!-- Banking App Interface Concept -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Banking App Interface Concept.jpg" alt="Banking App Interface Concept" width="360" height="300">
                         <h2>Banking App Interface Concept</h2>
                         <p>App</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Cashless Payment -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Cashless Payment.jpg" alt="Cashless Payment On Iphone Over The Banking Terminal" width="360" height="300">
                         <h2>Cashless Payment</h2>
                         <p>Marketing</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Meditation App -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Meditation App.jpg" alt="Meditation App Shown On The iPhone and Laptop" width="360" height="300">
                         <h2>Meditation App</h2>
                         <p>App</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Taxi Service -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Taxi Service.jpg" alt="Taxi Service Shown Driver Hands Holds Car Steering Wheel" width="360" height="300">
                         <h2>Taxi Service</h2>
                         <p>Marketing</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Screen Illustrations -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Screen Illustrations.jpg" alt="Screen Illustrations With Imagine Planet Landscape Shown On The Phone" width="360" height="300">
                         <h2>Screen Illustrations</h2>
                         <p>Design</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Online Courses -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Online Courses.jpg" alt="Stylish Beautiful Young Woman Holds The iPhone In One Hand And Earphones In Another Hand Watching Online Courses On The Street" width="360" height="300">
                         <h2>Online Courses</h2>
                         <p>Marketing</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Instagram Stories Concept -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Instagram Stories Concept.jpg" alt="Instagram Stories Concept Shown On 6 Samples" width="360" height="300">
                         <h2>Instagram Stories Concept</h2>
                         <p>Design</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Organic Food -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Organic Food.jpg" alt="Woman Holds A Bag On Her Hand With Organic Food" width="360" height="300">
                         <h2>Organic Food</h2>
                         <p>Web Site</p>
-                    </article>
+                    </a>
                 </li>
         
                 <!-- Fresh Coffee -->
                 <li>
-                    <article class="project-card">
+                    <a class="project-card">
                         <img src="images/Fresh Coffee.jpg" alt="The Cup With Fresh Coffee Is Holded In The Hand" width="360" height="300">
                         <h2>Fresh Coffee</h2>
                         <p>Web Site</p>
-                    </article>
+                    </a>
                 </li>
             </ul>
-        </section>
+        </section>      
         
-
     <footer>
         class="footer-content">
             <a href="./index.html">WEBSTUDIO</a>
