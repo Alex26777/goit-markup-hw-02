@@ -94,7 +94,7 @@ header address ul li {
 
 /* Стилі для кнопки "Order Service" */
 .order-button {
-    background: #4D5AE5; /* Колір фону кнопки */
+    background: #404bbf; /* Колір фону кнопки */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #FFFFFF; /* Білий колір тексту */
@@ -121,6 +121,15 @@ header address ul li {
     text-align: center;
     color: #2E2F42;
 }
+
+ul {
+    list-style: none;
+    }
+
+      /* Заголовки H2 */
+      h2 {
+        font-size: 20px; /* Встановлюємо розмір шрифту 20px */
+    }
 
 header nav a,
 header address a {
